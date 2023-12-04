@@ -2388,13 +2388,14 @@ fi
 
 fi
 
-echo "$ac_t""$ac_cv_func_mmap_fixed_mapped" 1>&6
-if test $ac_cv_func_mmap_fixed_mapped = yes; then
-  cat >> confdefs.h <<\EOF
-#define HAVE_MMAP 1
-EOF
+# No Mmap for spring
+# echo "$ac_t""$ac_cv_func_mmap_fixed_mapped" 1>&6
+# if test $ac_cv_func_mmap_fixed_mapped = yes; then
+#   cat >> confdefs.h <<\EOF
+# #define HAVE_MMAP 1
+# EOF
 
-fi
+# fi
 
 for ac_func in ftruncate memcmp memcpy memmove
 do
